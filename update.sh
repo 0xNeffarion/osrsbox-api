@@ -22,7 +22,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ###############################################################################
 '
 
+# Keep local changes
+git stash
+
+# Update repo from Git
 git pull
+
+# Update submodules (schemas) if needed (uncomment)
+# git submodule update --remote --merge
+
+# Add existing changes (username/password)
+git stash pop
 
 # Clean docker environment
 bash clean.sh
