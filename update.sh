@@ -32,6 +32,3 @@ docker-compose up -d --build
 
 # Update osrsbox data
 docker exec -t osrsbox-eve python3 /scripts/mongo_insert_osrsbox.py
-
-# Clear cache after update
-docker exec -t osrsbox-nginx rm -rf /etc/nginx/cache/*
