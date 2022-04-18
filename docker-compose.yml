@@ -21,10 +21,6 @@
 ###############################################################################
 version: '3'
 
-volumes:
-  -
-
-
 services:
   mongo:
     container_name: osrsbox-api-mongo
@@ -72,8 +68,8 @@ services:
     container_name: osrsbox-api-nginx
     image: nginx:stable-alpine
     restart: unless-stopped
-    expose:
-      - 80
+    ports:
+      - 9010:80
     volumes:
       - ./nginx/conf.d/app.conf:/etc/nginx/conf.d/default.conf
       - ./nginx/app:/usr/share/nginx/html/

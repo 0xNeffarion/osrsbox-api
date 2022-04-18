@@ -21,26 +21,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ###############################################################################
 '
-# Get current date
-date=$(date +'%m-%d-%Y')
-
-# Dump docker nginx logs
-docker logs osrsbox-api-nginx >> ~/nginx-$date.log 2>&1
 
 # Clean docker environment
 bash clean.sh
-
-# Keep local changes
-git stash
-
-# Update repo from Git
-git pull
-
-# Update submodules (schemas) if needed (uncomment)
-# git submodule update --remote --merge
-
-# Add existing changes (username/password)
-git stash pop
 
 # Build and run docker environment, as a background process
 docker-compose up -d --build
