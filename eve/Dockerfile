@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ###############################################################################
-FROM python:3.7-alpine
+FROM python:alpine
 LABEL MAINTAINER="PH01L <phoil@osrsbox.com>"
 
 # Set PYTHONPATH environment variable
