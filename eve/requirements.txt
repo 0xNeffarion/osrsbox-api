@@ -1,3 +1,4 @@
 Eve==1.1.5
 Eve-Swagger==0.1.4
 osrsbox
+pymongo==3.11.4

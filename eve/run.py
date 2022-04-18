@@ -81,7 +81,7 @@ app = Eve(validator=MyValidator,
 # Configure environment (production/development)
 environment = os.environ["APP_ENV"]
 if environment == "prod":
-    host = "https://api.osrsbox.com"
+    host = "https://osrs.neffware.com"
     port = 5000
 if environment == "dev":
     host = "http://127.0.0.1"
@@ -94,7 +94,7 @@ SWAGGER_CONFIG = {
     "description": "An open, free, complete and up-to-date RESTful API for Old School RuneScape (OSRS) items, monsters and prayers.",
     "contact": {
         "name": "osrsbox-api",
-        "url": "https://api.osrsbox.com"
+        "url": "https://osrs.neffware.com"
     },
     "license": {
         "name": "GNU General Public License v3.0",
