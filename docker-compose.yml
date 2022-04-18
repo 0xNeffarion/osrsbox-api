@@ -23,8 +23,8 @@ version: '3'
 
 networks:
   main_net:
-    name: main_net
-    external: true
+    external:
+      name: main_net
 
 services:
   osrsbox-mongo:
