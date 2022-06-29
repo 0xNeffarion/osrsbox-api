@@ -24,9 +24,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import itertools
 
 import pymongo
-from osrsbox import items_api
-from osrsbox import monsters_api
-from osrsbox import prayers_api
+from osrsreboxed import items_api
+from osrsreboxed import monsters_api
+from osrsreboxed import prayers_api
 
 from connection_properties import ConnectionProperties
 cp = ConnectionProperties()
