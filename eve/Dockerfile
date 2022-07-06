@@ -32,6 +32,7 @@ WORKDIR /var/www/eve/
 ADD ./requirements.txt /var/www/eve/requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install gunicorn
+RUN pip install --upgrade -r requirements.txt
 
 # Add the www user, run as root (temporarily)
 USER root
